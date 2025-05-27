@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jiangzhou Wang</title>
   <link rel="stylesheet" href="style.css">
+  <!-- 引入 Font Awesome 免费图标库 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papbWqRZhMYXv6NjbVq9JOyj+o2raN8aPQxdrKkZtIO39J91c4ZFc8hrqFD5wTvD+tTGxEriKxX8U6LTnJ5PaQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <style>
     /* 主体字体及布局 */
     body {
@@ -70,22 +79,32 @@
       font-weight: 600;
     }
 
-    /* 链接列表 */
+    /* 链接列表：左对齐，图标+文字 */
     aside ul {
       list-style: none;
       padding: 0;
       margin-top: 15px;
+      text-align: left;
     }
     aside ul li {
       margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     aside ul li a {
       color: #007acc;
       text-decoration: none;
       font-weight: 600;
+      flex-grow: 1;
     }
     aside ul li a:hover {
       text-decoration: underline;
+    }
+    aside ul li i {
+      color: #007acc;
+      min-width: 18px;
+      font-size: 16px;
     }
 
     /* 主体内容区域 */
@@ -154,10 +173,10 @@
       <p>📍 Shenzhen</p>
 
       <ul>
-        <li><a href="#">Rersonal web at SZU</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Google Scholar</a></li>
-        <li><a href="#">ORCID</a></li>
+        <li><i class="fas fa-globe"></i><a href="#">Personal web at SZU</a></li>
+        <li><i class="fab fa-github"></i><a href="#">GitHub</a></li>
+        <li><i class="fas fa-graduation-cap"></i><a href="#">Google Scholar</a></li>
+        <li><i class="fas fa-id-badge"></i><a href="#">ORCID</a></li>
       </ul>
     </aside>
 
