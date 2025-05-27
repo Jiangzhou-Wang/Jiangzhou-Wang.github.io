@@ -23,11 +23,12 @@
     }
 
     header nav {
-      background-color: #fafafa;
-      padding: 11px 0;
+      background-color: #ffffff; /* ✅ 调浅背景为纯白色，避免层叠造成视觉混乱 */
+      padding: 12px 0;
       text-align: center;
-      border-bottom: 1px solid #ccc; /* ✅ 修改：颜色更浅，只保留一条底边线 */
-      margin-bottom: 0; /* ✅ 新增：确保下方没有额外间距 */
+      border-bottom: 1px solid #ccc; /* ✅ 保留一条清晰底边线 */
+      box-shadow: none; /* ✅ 确保没有额外阴影 */
+      margin-bottom: 0;
     }
 
     header nav a {
@@ -38,12 +39,12 @@
     }
 
     .container {
-      display: flex;
-      max-width: 1000px;
-      margin: 20px auto 40px auto; /* ✅ 修改：将顶部 margin 从 40px 改为 20px，减小与导航栏的垂直间距 */
+      background-color: #fff; /* ✅ 明确背景为白色，防止顶部重叠灰背景 */
+      margin: 20px auto 40px auto;
       padding: 0 20px;
       gap: 40px;
       align-items: flex-start;
+      border-top: none; /* ✅ 避免误加分隔线 */
     }
 
     /* ==================== 红色框中的内容优化 ==================== */
