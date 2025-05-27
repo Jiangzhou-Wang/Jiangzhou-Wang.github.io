@@ -30,25 +30,25 @@
 
     header nav{
       background-color:#fff;
-      padding:12px 20px;           /* ★ 修改：左右各 20px，让整体略向内缩 */
-      text-align:16px;             /* ★ 修改：导航文字左对齐 */
+      padding:12px 20px;            /* ★ 修改：左右各 20px，让整体略向内缩 */
+      text-align:16px;              /* ★ 修改：导航文字左对齐（原样保留） */
       border-bottom:1px solid #e0e0e0;
       box-shadow:none;
       margin-bottom:0;
     }
 
     header nav a{
-      margin:0 20px;               /* ★ 修改：增大各条目之间的水平间距（原 5px） */
+      margin:0 20px;                /* ★ 修改：增大各条目之间的水平间距 */
       text-decoration:none;
       font-weight:600;
-      color:#555;                  /* ★ 修改：所有链接字体改为灰色 */
+      color:#555;
       transition:color .2s;
     }
 
-    header nav a.brand{            /* ★ 修改：品牌名专用样式 */
-      font-weight:700;             /*   加粗 */
-      color:#555;                  /*   灰色 */
-      margin-right:40px;           /*   品牌与其它条目距离更大 */
+    header nav a.brand{
+      font-weight:700;
+      color:#555;
+      margin-right:40px;
     }
 
     header nav a:hover{
@@ -185,13 +185,27 @@
     #contact p a:hover{
       text-decoration:underline;
     }
+
+    /* ★ 新增：论文列表美化 ========================== */
+    .pub-list{                     /* 去掉默认项目符号 */
+      list-style:none;             /* ★ 新增 */
+      padding:0;                   /* ★ 新增 */
+    }
+    .pub-list li{                  /* 统一行距与间距 */
+      margin-bottom:16px;          /* ★ 新增 */
+      line-height:1.45;            /* ★ 新增 */
+      text-align:justify;          /* ★ 新增 */
+    }
+    .pub-list .number{             /* 序号样式 */
+      font-weight:bold;
+      margin-right:6px;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <nav>
-      <!-- ★ 修改：给品牌链接加 class="brand" -->
       <a href="index.html" class="brand">Jiangzhou Wang</a>
       <a href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
@@ -215,25 +229,35 @@
         <li><i class="fab fa-github"></i><a href="#">GitHub</a></li>
         <li><i class="fas fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=YV57gNcAAAAJ&hl=en">Google Scholar</a></li>
         <li><i class="fas fa-id-card"></i><a href="https://orcid.org/0000-0003-3873-9647">ORCID</a></li>
-        <li><i class="fas fa-home"></i><a href="https://math.szu.edu.cn/info/1092/2961.htm" target="_blank">Homepage at SZU</a></li>
+        <li><i class="fas fa-home"></i><a href="https://math.szu.edu.cn/info/1092/2961.htm">Homepage at SZU</a></li>
       </ul>
     </aside>
 
     <main>
       <section>
         <h2>Accepted/Published papers</h2>
-            <!-- 论文列表 -->
-      <ul class="pub-list">
-      <li><span class="number">[9]</span>Jiangzhou Wang, Meier Wu, Yang Liu, Binghui Liu and Jianhua Guo. (2025). Joint community detection in random effects stochastic block models via the split-likelihood method, <em>Journal of Computational and Graphical Statistics</em>, 1–57.</li>
-      <li><span class="number">[8]</span>Jiangzhou Wang, Binghui Liu, Jianhua Guo and Bing-yi Jing. (2025). Understanding asymptotic consistency and its unique advantages in large sample statistical inference, <em>Journal of Multivariate Analysis</em>, 1–17.</li>
-      <li><span class="number">[7]</span>Peng Luo, Jiangzhou Wang, Yilong Wu and Wei Zhang. (2025). Inference of treatment benefit rate and treatment harm rate with missing endpoint and covariate. <em>Statistics and Its Interface</em>, 1–27. (alphabetical order).</li>
-      <li><span class="number">[6]</span>Canhui Li, Jiangzhou Wang and Pengfei Wang. (2024). Large-scale dependent multiple testing via higher-order hidden Markov models. <em>Journal of Biopharmaceutical Statistics</em>, 1–13. (alphabetical order).</li>
-      <li><span class="number">[5]</span>Jiangzhou Wang, Pengfei Wang. (2024). Large-scale dependent multiple testing via hidden semi-Markov models, <em>Computational Statistics</em>, 39, 1093–1126.</li>
-      <li><span class="number">[4]</span>Jiangzhou Wang, Pengfei Wang, Tingting Cui and Wensheng Zhu. (2023). Covariate-modulated large-scale multiple testing under dependence, <em>Computational Statistics and Data Analysis</em>, 180, 107664.</li>
-      <li><span class="number">[3]</span>Jiangzhou Wang, Jingfei Zhang, Binghui Liu, Ji Zhu and Jianhua Guo. (2023). Fast network community detection with profile-pseudo likelihood methods, <em>Journal of the American Statistical Association</em>, 118(542), 1359–1372.</li>
-      <li><span class="number">[2]</span>Jiangzhou Wang, Binghui Liu and Jianhua Guo. (2021). Efficient split likelihood-based method for community detection of large-scale networks, <em>Stat</em>, 10(1), e349.</li>
-      <li><span class="number">[1]</span>Jiangzhou Wang, Jianhua Guo and Binghui Liu. (2021). A fast algorithm for integrative community detection of multi-layer networks, <em>Stat</em>, 10(1), e348.</li>
-      </ul>
+
+        <!-- 论文列表 -->
+        <ul class="pub-list">
+          <li><span class="number">[9]</span><strong>Jiangzhou Wang</strong>, Meier Wu, Yang Liu, Binghui Liu and Jianhua Guo. (2025). Joint community detection in random effects stochastic block models via the split-likelihood method, <em>Journal of Computational and Graphical Statistics</em>, 1–57.</li>
+
+          <li><span class="number">[8]</span><strong>Jiangzhou Wang</strong>, Binghui Liu, Jianhua Guo and Bing-yi Jing. (2025). Understanding asymptotic consistency and its unique advantages in large sample statistical inference, <em>Journal of Multivariate Analysis</em>, 1–17.</li>
+
+          <li><span class="number">[7]</span>Peng Luo, <strong>Jiangzhou Wang</strong>, Yilong Wu and Wei Zhang. (2025). Inference of treatment benefit rate and treatment harm rate with missing endpoint and covariate. <em>Statistics and Its Interface</em>, 1–27. (alphabetical order).</li>
+
+          <li><span class="number">[6]</span>Canhui Li, <strong>Jiangzhou Wang</strong> and Pengfei Wang. (2024). Large-scale dependent multiple testing via higher-order hidden Markov models. <em>Journal of Biopharmaceutical Statistics</em>, 1–13. (alphabetical order).</li>
+
+          <li><span class="number">[5]</span><strong>Jiangzhou Wang</strong>, Pengfei Wang. (2024). Large-scale dependent multiple testing via hidden semi-Markov models, <em>Computational Statistics</em>, 39, 1093–1126.</li>
+
+          <li><span class="number">[4]</span><strong>Jiangzhou Wang</strong>, Pengfei Wang, Tingting Cui and Wensheng Zhu. (2023). Covariate-modulated large-scale multiple testing under dependence, <em>Computational Statistics and Data Analysis</em>, 180, 107664.</li>
+
+          <li><span class="number">[3]</span><strong>Jiangzhou Wang</strong>, Jingfei Zhang, Binghui Liu, Ji Zhu and Jianhua Guo. (2023). Fast network community detection with profile-pseudo likelihood methods, <em>Journal of the American Statistical Association</em>, 118(542), 1359–1372.</li>
+
+          <li><span class="number">[2]</span><strong>Jiangzhou Wang</strong>, Binghui Liu and Jianhua Guo. (2021). Efficient split likelihood-based method for community detection of large-scale networks, <em>Stat</em>, 10(1), e349.</li>
+
+          <li><span class="number">[1]</span><strong>Jiangzhou Wang</strong>, Jianhua Guo and Binghui Liu. (2021). A fast algorithm for integrative community detection of multi-layer networks, <em>Stat</em>, 10(1), e348.</li>
+        </ul>
+
       </section>
     </main>
   </div>
