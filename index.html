@@ -61,7 +61,7 @@
     border: none; /* 去掉边框 */
     margin-bottom: 20px;
     object-fit: cover;
-    margin-top: 80px; /* 新增：整体向下移动20px */
+    margin-top: 80px; /* 新增：整体向下移动80px */
   }
   /* 其他样式保持不变 */
 
@@ -69,23 +69,28 @@
     /* 姓名调整为一行，小字号加粗 */
     aside h2 {
       font-weight: 700;
-      font-size: 1.3em;
-      margin: 0 0 15px 0;
+      font-size: 1.1em;
+      margin-bottom: 4px; /* 缩小下间距 */
+      /* margin: 0 0 15px 0;*/
       display: flex;
       gap: 8px;
       align-items: center;
       justify-content: center;
       color: #1f497d;
+      line-height: 1.2; /* 缩小行间距 */
     }
     aside h2 span {
       font-weight: 700;
       font-size: 1.3em;
       color: #1f497d;
+      line-height: 1.2;
     }
 
     aside p {
-      font-weight: 600;
-      margin: 0 0 20px 0;
+      font-weight: 400;
+      margin: 0 0 12px 0; /* 缩小段落间距 */
+      font-size: 0.95em; /* 调小字体 */
+      line-height: 1.3; /* 缩小行间距 */
       text-align: center;
     }
 
@@ -112,6 +117,9 @@
       font-size: 18px;
       text-align: center;
       color: #1f497d;
+      margin-bottom: 10px; /* 缩小列表项间距 */
+      font-size: 0.95em; /* 调小字体 */
+      line-height: 1.3; /* 缩小行间距 */
     }
 
     aside ul li a {
