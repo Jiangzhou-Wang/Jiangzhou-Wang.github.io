@@ -17,7 +17,8 @@
     body {
       font-family: Arial, sans-serif;
       color: #333;
-      line-height: 1.6;
+      /* 调整行间距为更美观的1.8 */
+      line-height: 1.8;
       margin: 0;
       background-color: #fff;
     }
@@ -47,8 +48,7 @@
 
     aside {
       width: 260px;
-      /* 左对齐内容 */
-      text-align: left;
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,50 +56,64 @@
 
     aside img {
       width: 180px;
-      border-radius: 50%;
-      margin-bottom: 15px;
+      border-radius: 50% / 65%; /* 椭圆形 */
+      border: 8px solid white; /* 白色边框 */
+      margin-bottom: 20px;
+      object-fit: cover;
     }
 
-    /* 姓名改成同一行，小号字体，加粗 */
+    /* 姓名调整为一行，小字号加粗 */
     aside h2 {
-      font-size: 1.2em;
       font-weight: 700;
+      font-size: 1.3em;
       margin: 0 0 15px 0;
       display: flex;
       gap: 8px;
       align-items: center;
       justify-content: center;
+      color: #1f497d;
     }
-
     aside h2 span {
       font-weight: 700;
-      font-size: 1.1em;
+      font-size: 1.3em;
       color: #1f497d;
     }
 
     aside p {
-      margin: 5px 0;
       font-weight: 600;
+      margin: 0 0 20px 0;
       text-align: center;
     }
 
-    /* 链接列表：左对齐，项目符号改为圆点 */
     aside ul {
-      list-style: disc inside;
-      padding-left: 0;
-      margin-top: 15px;
+      list-style: none;
+      padding: 0;
+      margin-top: 0;
       width: 100%;
-      color: #007acc;
-      font-weight: 600;
+      text-align: left;
     }
 
     aside ul li {
-      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #1f497d;
+    }
+
+    aside ul li i {
+      min-width: 22px;
+      font-size: 18px;
+      text-align: center;
+      color: #1f497d;
     }
 
     aside ul li a {
-      color: #007acc;
+      color: #1f497d;
       text-decoration: none;
+      flex-grow: 1;
     }
 
     aside ul li a:hover {
@@ -158,7 +172,7 @@
 
   <div class="container">
     <aside>
-      <img src="images/WJZtry.png" alt="Jiangzhou Wang">
+      <img src="images/WJZtry.png" alt="Jiangzhou Wang" />
 
       <h2>
         Jiangzhou Wang
@@ -166,13 +180,11 @@
       </h2>
 
       <p>Assistant Professor in Statistics</p>
-      <p>📍 Shenzhen</p>
-
       <ul>
-        <li><a href="https://math.szu.edu.cn/info/1092/2961.htm" target="_blank" rel="noopener noreferrer">Personal web at SZU</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Google Scholar</a></li>
-        <li><a href="#">ORCID</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> Shenzhen</li>
+        <li><i class="fab fa-github"></i><a href="#">GitHub</a></li>
+        <li><i class="fas fa-graduation-cap"></i><a href="#">Google Scholar</a></li>
+        <li><i class="fas fa-id-card"></i><a href="#">ORCID</a></li>
       </ul>
     </aside>
 
