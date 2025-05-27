@@ -54,13 +54,17 @@
       align-items: center;
     }
 
-    aside img {
-      width: 180px;
-      border-radius: 50% / 65%; /* 椭圆形 */
-      border: 8px solid white; /* 白色边框 */
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
+  /* 调整头像整体下移 */
+  aside img {
+    width: 180px;
+    border-radius: 0; /* 恢复为原始形状，去掉椭圆和圆形 */
+    border: none; /* 去掉边框 */
+    margin-bottom: 20px;
+    object-fit: cover;
+    margin-top: 20px; /* 新增：整体向下移动20px */
+  }
+  /* 其他样式保持不变 */
+
 
     /* 姓名调整为一行，小字号加粗 */
     aside h2 {
