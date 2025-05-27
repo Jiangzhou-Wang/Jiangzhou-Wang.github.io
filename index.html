@@ -22,12 +22,18 @@
       background-color: #fff;
     }
 
+    /* ==================== 头部与导航栏 ==================== */
+    header{                       /* ★ 修改：确保 header 与 nav 颜色一致，去掉多余边框 */
+      background:#fff;            /* ★ 修改 */
+      border-bottom:none;         /* ★ 修改：避免出现第二条线 */
+    }
+
     header nav {
-      background-color: #fff; /* ✅ 调浅背景为纯白色，避免层叠造成视觉混乱 */
-      padding: 5px 0;
+      background-color: #fff;     /* ★ 修改：纯白背景，视觉更干净 */
+      padding: 12px 0;            /* ★ 修改：垂直内边距调为 12px（原 5px）视觉更舒展 */
       text-align: center;
-      border-bottom: 1px solid #ccc; /* ✅ 保留一条清晰底边线 */
-      box-shadow: none; /* ✅ 确保没有额外阴影 */
+      border-bottom: 1px solid #e0e0e0;  /* ★ 修改：仅保留一条更浅灰色底线 */
+      box-shadow: none;
       margin-bottom: 0;
     }
 
@@ -38,23 +44,24 @@
       color: #007acc;
     }
 
+    /* ==================== 容器 ==================== */
     .container {
-      background-color: #fff; /* ✅ 明确背景为白色，防止顶部重叠灰背景 */
+      background-color: #fff;
       margin: 20px auto 40px auto;
       padding: 0 20px;
       gap: 40px;
       align-items: flex-start;
-      border-top: none; /* ✅ 避免误加分隔线 */
+      border-top: none;
     }
 
     /* ==================== 红色框中的内容优化 ==================== */
 
     aside {
       width: 260px;
-      text-align: left; /* 左对齐 */
+      text-align: left;
       display: flex;
       flex-direction: column;
-      align-items: flex-start; /* 左对齐 */
+      align-items: flex-start;
     }
 
     aside img {
@@ -73,9 +80,9 @@
       display: flex;
       gap: 8px;
       align-items: center;
-      justify-content: flex-start; /* 左对齐 */
+      justify-content: flex-start;
       color: #1f497d;
-      line-height: 1.2; /* 缩小行间距 */
+      line-height: 1.2;
     }
 
     aside h2 span {
@@ -87,10 +94,10 @@
 
     aside p {
       font-weight: 400;
-      margin: 0 0 10px 0; /* 缩小段落间距 */
+      margin: 0 0 10px 0;
       font-size: 0.92em;
-      line-height: 1.2; /* 缩小行间距 */
-      text-align: left; /* 左对齐 */
+      line-height: 1.2;
+      text-align: left;
     }
 
     aside ul {
@@ -98,7 +105,7 @@
       padding: 0;
       margin-top: 0;
       width: 100%;
-      text-align: left; /* 左对齐 */
+      text-align: left;
     }
 
     aside ul li {
@@ -106,10 +113,10 @@
       align-items: center;
       gap: 8px;
       font-weight: 600;
-      font-size: 0.95rem; /* 调小字体 */
-      margin-bottom: 10px; /* 缩小条目间距 */
+      font-size: 0.95rem;
+      margin-bottom: 10px;
       color: #1f497d;
-      line-height: 1.2; /* 缩小行间距 */
+      line-height: 1.2;
     }
 
     aside ul li i {
@@ -117,7 +124,7 @@
       font-size: 0.95em;
       text-align: center;
       color: #1f497d;
-      margin-bottom: 0; /* 去掉额外间距 */
+      margin-bottom: 0;
       line-height: 1.2;
     }
 
