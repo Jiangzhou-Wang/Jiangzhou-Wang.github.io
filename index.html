@@ -9,22 +9,19 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-papbWqRZhMYXv6NjbVq9JOyj+o2raN8aPQxdrKkZtIO39J91c4ZFc8hrqFD5wTvD+tTGxEriKxX8U6LTnJ5PaQ=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
 
   <style>
-    /* 主体字体及布局 */
     body {
       font-family: Arial, sans-serif;
       color: #333;
-      line-height: 1.6; /* 行间距 */
+      line-height: 1.6;
       margin: 0;
       background-color: #fff;
     }
 
-    /* 导航栏样式 */
     header nav {
       background-color: #f4f4f4;
       padding: 15px 0;
@@ -39,81 +36,81 @@
       color: #007acc;
     }
 
-    /* 整体容器，使用flex布局 */
     .container {
       display: flex;
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
       gap: 40px;
+      align-items: flex-start; /* 头像与右侧内容顶部对齐 */
     }
 
-    /* 侧边栏 */
     aside {
       width: 260px;
-      text-align: center;
+      /* 左对齐内容 */
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    /* 头像图片 */
     aside img {
       width: 180px;
       border-radius: 50%;
       margin-bottom: 15px;
     }
 
-    /* 姓名块，强制换行王江洲，王江洲加粗 */
+    /* 姓名改成同一行，小号字体，加粗 */
     aside h2 {
-      font-size: 1.5em;
-      margin: 10px 0 8px;
-      line-height: 1.2;
-    }
-    /* 分行且加粗 */
-    aside h2 span {
-      display: block;
+      font-size: 1.2em;
       font-weight: 700;
+      margin: 0 0 15px 0;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
     }
 
-    /* 职称和地点 */
+    aside h2 span {
+      font-weight: 700;
+      font-size: 1.1em;
+      color: #1f497d;
+    }
+
     aside p {
       margin: 5px 0;
       font-weight: 600;
+      text-align: center;
     }
 
-    /* 链接列表：左对齐，图标+文字 */
+    /* 链接列表：左对齐，项目符号改为圆点 */
     aside ul {
-      list-style: none;
-      padding: 0;
+      list-style: disc inside;
+      padding-left: 0;
       margin-top: 15px;
-      text-align: left;
+      width: 100%;
+      color: #007acc;
+      font-weight: 600;
     }
+
     aside ul li {
       margin: 10px 0;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
+
     aside ul li a {
       color: #007acc;
       text-decoration: none;
-      font-weight: 600;
-      flex-grow: 1;
     }
+
     aside ul li a:hover {
       text-decoration: underline;
     }
-    aside ul li i {
-      color: #007acc;
-      min-width: 18px;
-      font-size: 16px;
-    }
 
-    /* 主体内容区域 */
     main {
       flex: 1;
       max-width: 700px;
     }
 
-    /* 章节标题 */
     section h2 {
       color: #00558c;
       margin-bottom: 15px;
@@ -122,27 +119,26 @@
       font-weight: 700;
     }
 
-    /* 段落 */
     section p {
       margin-bottom: 20px;
       font-size: 1rem;
     }
 
-    /* 经验和教育的列表 */
     section ul {
       margin-left: 20px;
     }
+
     section ul li {
       margin-bottom: 10px;
       font-size: 1rem;
     }
 
-    /* 联系方式 */
     #contact p a {
       color: #007acc;
       text-decoration: none;
       font-weight: 600;
     }
+
     #contact p a:hover {
       text-decoration: underline;
     }
@@ -173,10 +169,10 @@
       <p>📍 Shenzhen</p>
 
       <ul>
-        <li><i class="fas fa-globe"></i><a href="#">Personal web at SZU</a></li>
-        <li><i class="fab fa-github"></i><a href="#">GitHub</a></li>
-        <li><i class="fas fa-graduation-cap"></i><a href="#">Google Scholar</a></li>
-        <li><i class="fas fa-id-badge"></i><a href="#">ORCID</a></li>
+        <li><a href="https://math.szu.edu.cn/info/1092/2961.htm" target="_blank" rel="noopener noreferrer">Personal web at SZU</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="#">ORCID</a></li>
       </ul>
     </aside>
 
