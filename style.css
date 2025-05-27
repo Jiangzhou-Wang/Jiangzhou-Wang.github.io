@@ -1,58 +1,73 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
   color: #333;
+}
+
+header {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007acc;
 }
 
 .container {
   display: flex;
-  min-height: 100vh;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 40px;
 }
 
-.sidebar {
-  background: #ffffff;
-  width: 280px;
-  padding: 30px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+aside {
+  width: 250px;
   text-align: center;
 }
 
-.profile-pic {
+aside img {
   width: 180px;
-  border-radius: 100px;
-  margin-bottom: 20px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.sidebar h2 {
+aside h2 {
   margin: 10px 0 5px;
-  font-size: 1.4em;
 }
 
-.sidebar p {
-  margin: 4px 0;
+aside ul {
+  list-style: none;
+  padding: 0;
 }
 
-.sidebar .links a {
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #007acc;
+aside ul li {
+  margin: 8px 0;
 }
 
-.content {
+main {
   flex: 1;
-  padding: 40px;
-  background: #f0f2f5;
+  max-width: 700px;
 }
 
-nav a {
-  margin-right: 20px;
-  text-decoration: none;
-  color: #007acc;
+section {
+  margin-bottom: 30px;
 }
 
-h1, h2 {
-  color: #004080;
+h2 {
+  color: #00558c;
 }
