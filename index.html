@@ -3,9 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jiangzhou Wang</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* 主体字体及布局 */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6; /* 行间距 */
+      margin: 0;
+      background-color: #fff;
+    }
+
+    /* 导航栏样式 */
+    header nav {
+      background-color: #f4f4f4;
+      padding: 15px 0;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #007acc;
+    }
+
+    /* 整体容器，使用flex布局 */
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    /* 侧边栏 */
+    aside {
+      width: 260px;
+      text-align: center;
+    }
+
+    /* 头像图片 */
+    aside img {
+      width: 180px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    /* 姓名块，强制换行王江洲，王江洲加粗 */
+    aside h2 {
+      font-size: 1.5em;
+      margin: 10px 0 8px;
+      line-height: 1.2;
+    }
+    /* 分行且加粗 */
+    aside h2 span {
+      display: block;
+      font-weight: 700;
+    }
+
+    /* 职称和地点 */
+    aside p {
+      margin: 5px 0;
+      font-weight: 600;
+    }
+
+    /* 链接列表 */
+    aside ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+    aside ul li {
+      margin: 10px 0;
+    }
+    aside ul li a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    aside ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* 主体内容区域 */
+    main {
+      flex: 1;
+      max-width: 700px;
+    }
+
+    /* 章节标题 */
+    section h2 {
+      color: #00558c;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 6px;
+      font-weight: 700;
+    }
+
+    /* 段落 */
+    section p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    /* 经验和教育的列表 */
+    section ul {
+      margin-left: 20px;
+    }
+    section ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    /* 联系方式 */
+    #contact p a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    #contact p a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <nav>
       <a href="index.html">Home</a>
@@ -19,12 +144,18 @@
   <div class="container">
     <aside>
       <img src="images/WJZtry.png" alt="Jiangzhou Wang">
-      <h2>Jiangzhou Wang (王江洲)</h2>
+
+      <h2>
+        Jiangzhou Wang
+        <span>王江洲</span>
+      </h2>
+
       <p>Assistant Professor of Mathematics</p>
       <p>📍 Shenzhen</p>
+
       <ul>
         <li><a href="#">GitHub</a></li>
-        <li><a href="#">SZU personal webset</a></li>
+        <li><a href="#">SZU personal website</a></li>
         <li><a href="#">Google Scholar</a></li>
         <li><a href="#">ORCID</a></li>
       </ul>
@@ -34,8 +165,8 @@
       <section>
         <h2>About me</h2>
         <p>Hi! I am an Assistant Professor in the Department of Statistics and Data Science at the School of Mathematical Sciences, Shenzhen University. I received my Ph.D. degree in Statistics from Northeast Normal University under the supervision of Professor Jianhua Guo. Later, I conducted postdoctoral research at Southern University of Science and Technology, collaborating with Professors Bingyi Jing and Qiman Shao.</p>
-        <p>My primary research interests focus on statistical analysis of large-scale network data, multiple testing for large-scale dependent data, and the intersection of statistics with machine learning and deep learning. I have published papers in leading statistical journals such as JASA, JCGS, JMVA, CSDA, Computational Statistics, and Stat ect.<p>
-        <p>There are some openings for postdocs. Please feel free to contact me with your CV if you are interested..</p>
+        <p>My primary research interests focus on statistical analysis of large-scale network data, multiple testing for large-scale dependent data, and the intersection of statistics with machine learning and deep learning. I have published papers in leading statistical journals such as JASA, JCGS, JMVA, CSDA, Computational Statistics, and Stat etc.</p>
+        <p>There are some openings for postdocs. Please feel free to contact me with your CV if you are interested.</p>
       </section>
 
       <section>
