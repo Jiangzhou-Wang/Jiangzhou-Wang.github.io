@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About me – Jiangzhou Wang</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 Font Awesome 免费图标库 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.8;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    /* ==================== 头部与导航栏 ==================== */
+    header{
+      background:#fff;
+      border-bottom:none;
+    }
+
+    header nav{
+      background-color:#fff;
+      padding:12px 20px;            /* ★ 修改：左右各 20px，让整体略向内缩 */
+      text-align:16px;              /* 保留原样 */
+      border-bottom:1px solid #e0e0e0;
+      box-shadow:none;
+      margin-bottom:0;
+    }
+
+    header nav a{
+      margin:0 20px;
+      text-decoration:none;
+      font-weight:600;
+      color:#555;
+      transition:color .2s;
+    }
+
+    header nav a.brand{
+      font-weight:700;
+      color:#555;
+      margin-right:40px;
+    }
+
+    header nav a:hover{
+      color:#007acc;
+    }
+
+    /* ==================== 容器 ==================== */
+    .container{
+      background-color:#fff;
+      margin:20px auto 40px auto;
+      padding:0 20px;
+      gap:40px;
+      align-items:flex-start;
+      border-top:none;
+    }
+
+    /* ==================== 侧边栏保持不变 ==================== */
+    aside{
+      width:260px;
+      text-align:left;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+    }
+
+    aside img{
+      width:180px;
+      border-radius:0;
+      border:none;
+      margin-bottom:20px;
+      object-fit:cover;
+      margin-top:80px;
+    }
+
+    aside h2{
+      font-weight:700;
+      font-size:1.1em;
+      margin-bottom:6px;
+      display:flex;
+      gap:8px;
+      align-items:center;
+      justify-content:flex-start;
+      color:#1f497d;
+      line-height:1.2;
+    }
+
+    aside h2 span{
+      font-weight:700;
+      font-size:1.0em;
+      color:#1f497d;
+      line-height:1.2;
+    }
+
+    aside p{
+      font-weight:400;
+      margin:0 0 10px 0;
+      font-size:0.92em;
+      line-height:1.2;
+      text-align:left;
+    }
+
+    aside ul{
+      list-style:none;
+      padding:0;
+      margin-top:0;
+      width:100%;
+      text-align:left;
+    }
+
+    aside ul li{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-weight:600;
+      font-size:0.95rem;
+      margin-bottom:10px;
+      color:#1f497d;
+      line-height:1.2;
+    }
+
+    aside ul li i{
+      min-width:20px;
+      font-size:0.95em;
+      text-align:center;
+      color:#1f497d;
+      margin-bottom:0;
+      line-height:1.2;
+    }
+
+    aside ul li a{
+      color:#1f497d;
+      text-decoration:none;
+      flex-grow:1;
+    }
+
+    aside ul li a:hover{
+      text-decoration:underline;
+    }
+
+    /* ==================== 页面右侧主要内容 ==================== */
+    main{
+      flex:1;
+      max-width:700px;
+    }
+
+    section h2{
+      color:#00558c;
+      margin-bottom:15px;
+      border-bottom:2px solid #007acc;
+      padding-bottom:6px;
+      font-weight:700;
+    }
+
+    /* ★ 新增：教学列表样式 ==================== */
+    .teach-list{                 /* 去掉默认小圆点 */
+      list-style:none;           /* ★ 新增 */
+      padding:0;                 /* ★ 新增 */
+    }
+    .teach-list li{
+      margin-bottom:10px;        /* ★ 新增 */
+      line-height:1.4;           /* ★ 新增 */
+      position:relative;         /* ★ 新增 */
+      padding-left:22px;         /* ★ 新增：给自定义符号留空间 */
+    }
+    .teach-list li::before{      /* ★ 新增：蓝色菱形符号 */
+      content:"🔹";
+      position:absolute;
+      left:0;
+      top:0;
+    }
+
+    #contact p a{
+      color:#007acc;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    #contact p a:hover{
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="brand">Jiangzhou Wang</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <img src="images/WJZtry.png" alt="Jiangzhou Wang" />
+
+      <h2>
+        Jiangzhou Wang
+        <span>王江洲</span>
+      </h2>
+
+      <p>Assistant Professor in Statistics</p>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6">@Shenzhen University</a></li>
+        <li><i class="fab fa-github"></i><a href="https://jiangzhou-wang.github.io">GitHub</a></li>
+        <li><i class="fas fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=YV57gNcAAAAJ&hl=en">Google Scholar</a></li>
+        <li><i class="fas fa-id-card"></i><a href="https://orcid.org/0000-0003-3873-9647">ORCID</a></li>
+        <li><i class="fas fa-home"></i><a href="https://math.szu.edu.cn/info/1092/2961.htm">Homepage at SZU</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <!-- ★ 修改：Graduate Course section -->
+      <section>
+        <h2>Graduate Course</h2>
+        <ul class="teach-list">
+          <li>Modern Statistics</li>
+        </ul>
+      </section>
+
+      <!-- ★ 修改：Undergraduate Courses section -->
+      <section>
+        <h2>Undergraduate Courses</h2>
+        <ul class="teach-list">
+          <li>Advanced Mathematics A&nbsp;(1)</li>
+          <li>Advanced Mathematics A&nbsp;(2)</li>
+          <li>Bayesian Data Analysis</li>
+          <li>Multivariate Statistical Analysis</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
