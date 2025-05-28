@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About me – Jiangzhou Wang</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 Font Awesome 免费图标库 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.8;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    /* ==================== 头部与导航栏 ==================== */
+    header{
+      background:#fff;
+      border-bottom:none;
+    }
+
+    header nav{
+      background-color:#fff;
+      padding:12px 20px;           /* ★ 修改：左右各 20px，让整体略向内缩 */
+      text-align:10px;             /* ★ 修改：导航文字左对齐 */
+      border-bottom:1px solid #e0e0e0;
+      box-shadow:none;
+      margin-bottom:0;
+    }
+
+    header nav a{
+      margin:0 20px;               /* ★ 修改：增大各条目之间的水平间距（原 5px） */
+      text-decoration:none;
+      font-weight:600;
+      color:#555;                  /* ★ 修改：所有链接字体改为灰色 */
+      transition:color .2s;
+    }
+
+    header nav a.brand{            /* ★ 修改：品牌名专用样式 */
+      font-weight:700;             /*   加粗 */
+      color:#555;                  /*   灰色 */
+      margin-right:40px;           /*   品牌与其它条目距离更大 */
+    }
+
+    header nav a:hover{
+      color:#007acc;
+    }
+
+    /* ==================== 容器 ==================== */
+    .container{
+      background-color:#fff;
+      margin:20px auto 40px auto;
+      padding:0 20px;
+      gap:40px;
+      align-items:flex-start;
+      border-top:none;
+    }
+
+    /* ==================== 红色框中的内容优化 ==================== */
+    aside{
+      width:260px;
+      text-align:left;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+    }
+
+    aside img{
+      width:180px;
+      border-radius:0;
+      border:none;
+      margin-bottom:20px;
+      object-fit:cover;
+      margin-top:80px;
+    }
+
+    aside h2{
+      font-weight:700;
+      font-size:1.1em;
+      margin-bottom:6px;
+      display:flex;
+      gap:8px;
+      align-items:center;
+      justify-content:flex-start;
+      color:#1f497d;
+      line-height:1.2;
+    }
+
+    aside h2 span{
+      font-weight:700;
+      font-size:1.0em;
+      color:#1f497d;
+      line-height:1.2;
+    }
+
+    aside p{
+      font-weight:400;
+      margin:0 0 10px 0;
+      font-size:0.92em;
+      line-height:1.2;
+      text-align:left;
+    }
+
+    aside ul{
+      list-style:none;
+      padding:0;
+      margin-top:0;
+      width:100%;
+      text-align:left;
+    }
+
+    aside ul li{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-weight:600;
+      font-size:0.95rem;
+      margin-bottom:10px;
+      color:#1f497d;
+      line-height:1.2;
+    }
+
+    aside ul li i{
+      min-width:20px;
+      font-size:0.95em;
+      text-align:center;
+      color:#1f497d;
+      margin-bottom:0;
+      line-height:1.2;
+    }
+
+    aside ul li a{
+      color:#1f497d;
+      text-decoration:none;
+      flex-grow:1;
+    }
+
+    aside ul li a:hover{
+      text-decoration:underline;
+    }
+
+    /* ==================== 页面右侧主要内容 ==================== */
+    main{
+      flex:1;
+      max-width:700px;
+    }
+
+    section h2{
+      color:#00558c;
+      margin-bottom:15px;
+      border-bottom:2px solid #007acc;
+      padding-bottom:6px;
+      font-weight:700;
+    }
+
+    section p{
+      margin-bottom:20px;
+      font-size:1rem;
+    }
+
+    section ul{
+      margin-left:20px;
+    }
+
+    section ul li{
+      margin-bottom:10px;
+      font-size:1rem;
+    }
+
+    #contact p a{
+      color:#007acc;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    #contact p a:hover{
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <!-- ★ 修改：给品牌链接加 class="brand" -->
+      <a href="index.html" class="brand">Jiangzhou Wang</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="grants.html">Grants</a>
+      <a href="contact.html">Contact</a>
+      <a href="studients.html">Studients</a>
+      <a href="Jiangzhou_Wang_CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <img src="images/WJZtry.png" alt="Jiangzhou Wang" />
+
+      <h2>
+        Jiangzhou Wang
+        <span>王江洲</span>
+      </h2>
+
+      <p>Assistant Professor in Statistics</p>
+      <ul>
+        <li><i class="fas fa-envelope"></i><span style="color: black; font-weight: normal;">wangjz695@szu.edu.cn</span></li>
+        <li><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6/@22.5312453,113.9362956,16.62z/data=!4m6!3m5!1s0x3403ee16cdc7e93b:0xf92ae8df0c9c3015!8m2!3d22.53306!4d113.932813!16zL20vMGIwd3Q1?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D">Shenzhen University</a></li>
+        <li><i class="fab fa-github"></i><a href="https://jiangzhou-wang.github.io">GitHub</a></li>
+        <li><i class="fas fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=YV57gNcAAAAJ&hl=en">Google Scholar</a></li>
+        <li><i class="fas fa-id-card"></i><a href="https://orcid.org/0000-0003-3873-9647">ORCID</a></li>
+        <li><i class="fas fa-home"></i><a href="https://math.szu.edu.cn/info/1092/2961.htm">Homepage at SZU</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="studients">
+      <h2 style="color: #005a9c; border-bottom: 2px solid #0078d4;">Contact</h2>
+      </p>
+        <p style="margin: 0.2em 0 0.1em;">
+        <i class="fas fa-map-marker-alt"></i> Masters:
+      </p>
+      <div style="margin-left: 4.8em; line-height: 1.6;">
+        Ziyan Liu, 2024.09 - now <br>
+      </div>
+    </section>
+    </main>
+  </div>
+</body>
+</html>
